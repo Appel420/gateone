@@ -1,0 +1,1 @@
+open('/home/workdir/artifacts/gateone_clean/README.md').read()

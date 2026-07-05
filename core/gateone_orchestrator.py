@@ -1,0 +1,1 @@
+open('/home/workdir/artifacts/gateone_clean/core/gateone_orchestrator.py').read()

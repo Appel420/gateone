@@ -1,0 +1,1 @@
+open('/home/workdir/artifacts/gateone_clean/modules/hardware/mesh_replicator.py').read()
