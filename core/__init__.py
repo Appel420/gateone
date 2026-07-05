@@ -1,1 +1,1 @@
-open('/home/workdir/artifacts/gateone_clean/core/__init__.py').read()
+"""GateOne Core — Sovereign orchestration primitives. Real code. No placeholders."""
