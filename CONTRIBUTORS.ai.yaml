@@ -1,0 +1,63 @@
+version: 1
+repository: gateone
+generated_at: 2026-07-11T00:00:00Z
+policy:
+  default_trust_level: constrained
+  require_verified_identity: true
+  require_signed_commits_on_protected_branches: true
+  require_human_approval_for_merge: true
+contributors:
+  - id: owner-human
+    type: human
+    role: Owner
+    provider:
+      name: GitHub
+    identity:
+      algorithm: Ed25519
+      public_key_fingerprint: "REPLACE_WITH_REAL_FINGERPRINT"
+    permissions:
+      create_branch: true
+      commit: true
+      open_pr: true
+      review: true
+      merge: true
+      delete_branch: false
+      approve_release: true
+    trust_level: high
+    status: active
+
+  - id: copilot-github
+    type: ai
+    role: Coding
+    provider:
+      name: GitHub Copilot
+    identity:
+      algorithm: Ed25519
+      public_key_fingerprint: "REPLACE_WITH_REAL_FINGERPRINT"
+    permissions:
+      create_branch: true
+      commit: true
+      open_pr: true
+      review: true
+      merge: false
+      delete_branch: false
+    trust_level: constrained
+    status: active
+
+  - id: dependabot-github
+    type: automation
+    role: DependencyMaintenance
+    provider:
+      name: GitHub Dependabot
+    identity:
+      algorithm: Ed25519
+      public_key_fingerprint: "REPLACE_WITH_REAL_FINGERPRINT"
+    permissions:
+      create_branch: true
+      commit: true
+      open_pr: true
+      review: false
+      merge: false
+      delete_branch: false
+    trust_level: constrained
+    status: active
