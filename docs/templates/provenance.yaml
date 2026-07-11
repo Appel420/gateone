@@ -1,0 +1,30 @@
+# PR Provenance Manifest Template
+# Copy to `provenance.yaml` and complete for each pull request.
+
+provenance:
+  pr_number: null
+  title: ""
+  created_by:
+    contributor_id: ""
+    role: ""
+  reviewed_by:
+    - contributor_id: ""
+      role: ""
+  validated_by:
+    - contributor_id: "ci-github-actions"
+      role: "CI"
+  approved_by:
+    - contributor_id: "owner-human"
+      role: "Owner"
+  timestamp_utc: ""
+  source_branch: ""
+  target_branch: ""
+  source_commits:
+    - ""
+  artifacts:
+    sbom: ""
+    test_report: ""
+    security_report: ""
+  integrity:
+    algorithm: sha512
+    digest: ""

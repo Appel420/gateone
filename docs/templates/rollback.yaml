@@ -1,0 +1,27 @@
+# Rollback Certificate Template
+# Copy to `rollback.yaml` for each merge into protected branches.
+
+rollback:
+  change_id: ""
+  merged_pr: null
+  merged_commit: ""
+  previous_commit: ""
+  migration:
+    required: false
+    steps: []
+  database:
+    impact: "none"
+    backup_reference: ""
+  risk:
+    level: "low"
+    rationale: ""
+  rollback_steps:
+    - "git revert <merged_commit>"
+    - "re-run CI"
+    - "validate service health checks"
+  owner_approval:
+    contributor_id: "owner-human"
+    timestamp_utc: ""
+  integrity:
+    algorithm: sha512
+    digest: ""
