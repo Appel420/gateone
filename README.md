@@ -59,6 +59,7 @@ This performs:
 - Pushes to SCAR on every critical event
 - Compatible with GateOne Enclave PQC attestation (gateone-pqc-attestation skill)
 - Ready for sovereign-orchestrator-stack and kiosk-sovereign-assistant
+- GitHub collaboration skill: `.github/skills/github-tools-collaboration/SKILL.md`
 
 ## Security & Compliance
 - ISO/IEC 42001 + 23894 aligned
